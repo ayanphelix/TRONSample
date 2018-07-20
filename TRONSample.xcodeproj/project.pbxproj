@@ -12,9 +12,12 @@
 		974382332101617600CA8E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 974382312101617600CA8E3D /* Main.storyboard */; };
 		974382352101618000CA8E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 974382342101618000CA8E3D /* Assets.xcassets */; };
 		974382382101618000CA8E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 974382362101618000CA8E3D /* LaunchScreen.storyboard */; };
+		E5560E8837E7070D4D868105 /* Pods_TRONSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCFD77C452A0EAF594E35D7 /* Pods_TRONSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E12BDA66C1B81655AD0D542 /* Pods-TRONSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRONSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRONSample/Pods-TRONSample.debug.xcconfig"; sourceTree = "<group>"; };
+		72A33C100DC08599E54128B0 /* Pods-TRONSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRONSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRONSample/Pods-TRONSample.release.xcconfig"; sourceTree = "<group>"; };
 		9743822A2101617600CA8E3D /* TRONSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRONSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9743822D2101617600CA8E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9743822F2101617600CA8E3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		974382342101618000CA8E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		974382372101618000CA8E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		974382392101618000CA8E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBCFD77C452A0EAF594E35D7 /* Pods_TRONSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRONSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5560E8837E7070D4D868105 /* Pods_TRONSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20623DFF323D44417D70E596 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E12BDA66C1B81655AD0D542 /* Pods-TRONSample.debug.xcconfig */,
+				72A33C100DC08599E54128B0 /* Pods-TRONSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6CDE10FE38BE56C264D7DECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBCFD77C452A0EAF594E35D7 /* Pods_TRONSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		974382212101617600CA8E3D = {
 			isa = PBXGroup;
 			children = (
 				9743822C2101617600CA8E3D /* TRONSample */,
 				9743822B2101617600CA8E3D /* Products */,
+				20623DFF323D44417D70E596 /* Pods */,
+				6CDE10FE38BE56C264D7DECA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9743823C2101618000CA8E3D /* Build configuration list for PBXNativeTarget "TRONSample" */;
 			buildPhases = (
+				BF46D9276ADAB7C9FC58DF65 /* [CP] Check Pods Manifest.lock */,
 				974382262101617600CA8E3D /* Sources */,
 				974382272101617600CA8E3D /* Frameworks */,
 				974382282101617600CA8E3D /* Resources */,
+				49736E414BD2A97834069752 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49736E414BD2A97834069752 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TRONSample/Pods-TRONSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TRON/TRON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRONSample/Pods-TRONSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF46D9276ADAB7C9FC58DF65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TRONSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		974382262101617600CA8E3D /* Sources */ = {
@@ -278,16 +347,14 @@
 		};
 		9743823D2101618000CA8E3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E12BDA66C1B81655AD0D542 /* Pods-TRONSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UEGFXUHJDL;
 				INFOPLIST_FILE = TRONSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.holek.TRONSample;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.holekng.TRONSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,16 +363,14 @@
 		};
 		9743823E2101618000CA8E3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A33C100DC08599E54128B0 /* Pods-TRONSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UEGFXUHJDL;
 				INFOPLIST_FILE = TRONSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.holek.TRONSample;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.holekng.TRONSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
